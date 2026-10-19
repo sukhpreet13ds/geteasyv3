@@ -16,6 +16,20 @@ body {
   font-family: var(--font-inter);
 }
 
+::-webkit-scrollbar {
+    width: 3.5px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF9FA1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fa8587;
+}
+
 /* EXTRA EXTRA LARGE DESKTOPS */
 @media (max-width: 1800px) {
   .easy-navbar-container {
