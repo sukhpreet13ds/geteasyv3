@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Assets
 import crmImg from '../assets/conversion.jpg';
-import automationImg from '../assets/scheduling.jpg';
+import automationImg from '../assets/schedulingg.jpg';
 import pastelImg from '../assets/campaigns.jpg';
 
 const solutionsData = [
