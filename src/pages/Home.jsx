@@ -13,6 +13,15 @@ import feature2 from '../assets/feature2.png';
 import feature3 from '../assets/feature3.png';
 import feature4 from '../assets/feature4.png';
 
+// Features / AI Solutions Assets
+import crmImg from '../assets/CRM.jpg';
+import automationImg from '../assets/Automation.jpg';
+import pastelImg from '../assets/Pastel.jpg';
+import Solutions from '../components/Solutions';
+import Shorts from '../components/Shorts';
+import Stats from '../components/Stats';
+import For from '../components/For';
+
 const platformTopics = [
     {
         icon: feature1,
@@ -240,6 +249,113 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* 3. Features / AI Solutions Section */}
+            <section className="features-section">
+                <div className="features-container">
+                    {/* Header Row: Badge & Headline Left, Subtitle Description Right */}
+                    <div className="features-header-row">
+                        <div className="features-header-left">
+                            <span className="features-badge">Get Easy Solutions</span>
+                            <h2 className="features-main-title">
+                                What Makes Get Easy Software the Best Choice
+                            </h2>
+                        </div>
+                        <div className="features-header-right">
+                            <p className="features-header-desc">
+                               Latest WhatsApp and AI-powered features to automate business communication, boost customer engagement, and accelerate growth with lightning-fast performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Top Row: Two Feature Cards */}
+                    <div className="features-cards-grid">
+                        {/* Card 1: Instant QR Check-In for Reception */}
+                        <div className="features-card">
+                            <div className="features-card-media">
+                                <img
+                                    src={pastelImg}
+                                    alt="Instant QR Check-In for Reception"
+                                    className="features-card-img"
+                                />
+                            </div>
+                            <div className="features-card-body">
+                                <h3 className="features-card-title">
+                                    Instant QR Check-In for Reception
+                                </h3>
+                                <p className="features-card-desc">
+                                    A smart QR portal for fast, contactless check-in and booking, reducing queues, eliminating front-desk workload, enhancing security, and delivering a seamless, modern customer experience with one scan.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card 2: AI-Powered Automation & Messaging */}
+                        <div className="features-card">
+                            <div className="features-card-media">
+                                <img
+                                    src={automationImg}
+                                    alt="AI-Powered Business Automation"
+                                    className="features-card-img"
+                                />
+                            </div>
+                            <div className="features-card-body">
+                                <h3 className="features-card-title">
+                                    AI-Powered Business Automation
+                                </h3>
+                                <p className="features-card-desc">
+                                    Seamlessly integrate your AI agent and automate marketing campaigns, WhatsApp, SMS, and email interactions with real-time sync and unified workflows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bottom Row: Easy Deployment Tools + Intelligent Client Management */}
+                    <div className="features-deploy-row">
+                        <div className="features-deploy-text-col">
+                            <div className="features-deploy-content">
+                                <h3 className="features-deploy-title">Easy deployment tools</h3>
+                                <p className="features-deploy-desc">
+                                    Out-of-the-box widgets let you embed AI capabilities directly into your
+                                    website, skipping complex UI/UX challenges.
+                                </p>
+                                <a href="#tools" className="features-tools-btn">
+                                    View our tools
+                                </a>
+                            </div>
+                        </div>
+                        <div className="features-deploy-media-col">
+                            <div className="features-deploy-media-divider"></div>
+                            <div className="features-deploy-media-header">
+                                <h3 className="features-card-title">
+                                    Intelligent Client Management
+                                </h3>
+                                <p className="features-card-desc">
+                                    Transform client chaos into charm with Intelligent Client Management: centralize profiles, track interactions, automate follow-ups, gain insights, boost retention, and grow your business.
+                                </p>
+                            </div>
+                            <div className="features-deploy-media">
+                                <img
+                                    src={crmImg}
+                                    alt="Intelligent Client Management"
+                                    className="features-deploy-img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. Solutions Section */}
+            <Solutions />
+
+            {/* 5. Shorts / Customer Reviews Section */}
+            <Shorts />
+
+            {/* 6. Stats Section */}
+            <Stats />
+
+            {/* 7. For Section */}
+            <For />
         </main>
     );
 };
