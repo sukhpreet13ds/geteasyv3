@@ -734,7 +734,7 @@
     width: 100%;
     background: #ffffff;
     padding: 90px 24px 120px;
-    border-top: 1px solid #f1f3f6;
+    /* border-top: 1px solid #f1f3f6; */
     overflow: hidden;
 }
 
@@ -815,12 +815,12 @@
 }
 
 .platform-header-right {
-    max-width: 480px;
+    max-width: 580px;
     padding-top: 8px;
 }
 
 .platform-lead-text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.65;
     color: #475569;
     margin: 0;
@@ -1009,7 +1009,7 @@
     width: 100%;
     background: #ffffff;
     padding: 100px 32px 140px;
-    border-top: 1px solid #f1f3f6;
+    /* border-top: 1px solid #f1f3f6; */
     overflow: hidden;
 }
 
@@ -1441,7 +1441,7 @@
     background: #ffffff;
     padding: 110px 32px 140px;
     overflow: hidden;
-    border-top: 1px solid #f1f3f6;
+    /* border-top: 1px solid #f1f3f6; */
 }
 
 .shorts-container {
@@ -1640,7 +1640,7 @@
     background: #ffffff;
     padding: 100px 32px 140px;
     overflow: hidden;
-    border-top: 1px solid #f1f3f6;
+    /* border-top: 1px solid #f1f3f6; */
 }
 
 .stats-container {
@@ -1782,7 +1782,7 @@
     background: #ffffff;
     padding: 100px 32px 140px;
     overflow: hidden;
-    border-top: 1px solid #f1f3f6;
+    /* border-top: 1px solid #f1f3f6; */
 }
 
 .for-container {
@@ -1828,7 +1828,7 @@
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #6366f1;
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-family: var(--font-inter), sans-serif;
     display: inline-block;
@@ -1933,4 +1933,446 @@
 
 .for-area-image:hover .for-img {
     transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Explore Software Categories Section
+   ========================================================================== */
+
+.explore-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 0 80px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.explore-header {
+    max-width: 1480px;
+    margin: 0 auto 56px;
+    padding: 0 32px;
+}
+
+.explore-main-title {
+    font-size: 50px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #0b1a2d;
+    margin: 0;
+    letter-spacing: -0.025em;
+    font-family: var(--font-inter), sans-serif;
+}
+
+.explore-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.explore-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+    padding: 44px 34px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* 5 columns: remove right border on the 5th column */
+.explore-box:nth-child(5n) {
+    border-right: none;
+}
+
+/* Lower row (6-10) has no bottom border because grid container has border-bottom */
+.explore-box:nth-child(n+6) {
+    border-bottom: none;
+}
+
+.explore-box:hover {
+    background-color: #fafbfd;
+}
+
+.explore-box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.explore-box-heading-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+
+.explore-box-title {
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #0b1a2d;
+    margin: 0;
+    letter-spacing: -0.02em;
+    font-family: var(--font-inter), sans-serif;
+    transition: color 0.25s ease;
+}
+
+.explore-box:hover .explore-box-title {
+    color: var(--primary-color, #fe6527);
+}
+
+.explore-box-arrow {
+    color: #94a3b8;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.explore-box:hover .explore-box-arrow {
+    color: var(--primary-color, #fe6527);
+    transform: translate(3px, -3px);
+}
+
+.explore-box-desc {
+    font-size: 18px;
+    line-height: 1.55;
+    color: #64748b;
+    margin: 14px 0 0 0;
+    font-family: var(--font-inter), sans-serif;
+    transition: color 0.25s ease;
+    max-width: 440px;
+}
+
+.explore-box:hover .explore-box-desc {
+    color: #334155;
+}
+
+.explore-box-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 36px;
+}
+
+.explore-box-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    background: #FFF3EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.explore-box-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.explore-box:hover .explore-box-icon {
+    background: var(--primary-color, #fe6527);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 24px rgba(254, 101, 39, 0.26);
+}
+
+.explore-box:hover .explore-box-icon img {
+    filter: brightness(0) invert(1);
+}
+
+/* Floating Cursor Explore Button */
+.explore-cursor-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 10px 22px;
+    border-radius: 9999px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-inter), sans-serif;
+    user-select: none;
+}
+
+/* ==========================================================================
+   Review / Testimonial Circular Loop Section
+   ========================================================================== */
+
+.review-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 100px 32px 130px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.review-main-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.review-header {
+    margin-bottom: 56px;
+}
+
+.review-main-title {
+    font-size: 50px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #0b1a2d;
+    margin: 0;
+    letter-spacing: -0.025em;
+    font-family: var(--font-inter), sans-serif;
+}
+
+.review-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 520px;
+}
+
+/* Left Column: Curved Arc Stage */
+.review-left-col {
+    flex: 0 0 460px;
+    height: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.review-arc-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.review-arc-svg {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Arc Items */
+.review-arc-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+    transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.65s ease;
+    user-select: none;
+    will-change: transform, opacity;
+}
+
+.review-avatar-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f1f5f9;
+    transition: all 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.review-arc-item.active .review-avatar-wrap {
+    width: 84px;
+    height: 84px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.16);
+}
+
+.review-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.review-person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.review-person-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #475569;
+    margin: 0;
+    font-family: var(--font-inter), sans-serif;
+    transition: all 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.review-arc-item.active .review-person-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b1a2d;
+}
+
+.review-person-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #64748b;
+    font-family: var(--font-inter), sans-serif;
+    transition: all 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.review-arc-item.active .review-person-meta {
+    font-size: 14px;
+    color: #475569;
+}
+
+.review-star-icon {
+    color: #10b981;
+    font-size: 13.5px;
+    line-height: 1;
+}
+
+.review-rating {
+    font-weight: 600;
+    color: #0b1a2d;
+}
+
+.review-meta-dot {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.review-profession {
+    color: #64748b;
+    font-weight: 400;
+}
+
+/* Right Column: Quote Display */
+.review-right-col {
+    flex: 1;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 20px;
+}
+
+.review-quote-box {
+    position: relative;
+    animation: reviewQuoteFadeIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes reviewQuoteFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review-quote-mark {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 96px;
+    line-height: 0.5;
+    color: #0b1a2d;
+    margin-bottom: -15px;
+    display: block;
+    user-select: none;
+    opacity: 0.95;
+}
+
+.review-quote-text {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.6;
+    color: #1e2022;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.review-dropcap {
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 2px;
+    color: #0b1a2d;
+}
+
+/* Pagination Dots */
+.review-dots-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: #e2e8f0;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.review-dot.active {
+    width: 28px;
+    background: #0b1a2d;
 }

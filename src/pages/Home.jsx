@@ -21,6 +21,8 @@ import Solutions from '../components/Solutions';
 import Shorts from '../components/Shorts';
 import Stats from '../components/Stats';
 import For from '../components/For';
+import Explore from '../components/Explore';
+import Review from '../components/Review';
 
 const platformTopics = [
     {
@@ -356,6 +358,12 @@ const Home = () => {
 
             {/* 7. For Section */}
             <For />
+
+            {/* 8. Explore Software Categories Section */}
+            <Explore />
+
+            {/* 9. Review Section */}
+            <Review />
         </main>
     );
 };

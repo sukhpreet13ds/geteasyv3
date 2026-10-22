@@ -63,6 +63,28 @@ body {
   .for-container {
     max-width: 1400px !important;
   }
+
+  .explore-box {
+    min-height: 360px !important;
+    padding: 40px 30px !important;
+  }
+
+  .explore-box-title {
+    font-size: 24px !important;
+  }
+
+  .review-container {
+    max-width: 1320px !important;
+  }
+
+  .explore-header {
+    max-width: 1400px !important;
+    padding: 0 24px !important;
+  }
+
+  .review-main-wrapper {
+    max-width: 1400px !important;
+  }
 }
 
 /* EXTRA LARGE DESKTOPS */
@@ -198,6 +220,42 @@ body {
   }
   .solutions-header-title{
     font-size: 46px !important;
+  }
+
+  .explore-box {
+    min-height: 350px !important;
+    padding: 38px 28px !important;
+  }
+
+  .explore-box-title {
+    font-size: 23px !important;
+  }
+
+  .review-container {
+    max-width: 1240px !important;
+  }
+
+  .review-quote-text {
+    font-size: 30px !important;
+  }
+
+  .explore-main-title,
+  .review-main-title {
+    font-size: 46px !important;
+  }
+
+  .explore-header {
+    max-width: 1320px !important;
+    padding: 0 24px !important;
+    margin-bottom: 48px !important;
+  }
+
+  .review-main-wrapper {
+    max-width: 1320px !important;
+  }
+
+  .review-header {
+    margin-bottom: 48px !important;
   }
 }
 
@@ -428,6 +486,60 @@ font-size: 17px !important;
 
   .for-area {
     min-height: 400px !important;
+  }
+
+  .explore-box {
+    min-height: 330px !important;
+    padding: 34px 24px !important;
+  }
+
+  .explore-box-title {
+    font-size: 25px !important;
+  }
+
+  .explore-box-icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .explore-box-icon img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .explore-box-desc{
+    font-size: 16px !important;
+  }
+
+  .review-container {
+    max-width: 1140px !important;
+    gap: 40px !important;
+  }
+
+  .review-left-col {
+    flex: 0 0 420px !important;
+  }
+
+  .review-quote-text {
+    font-size: 28px !important;
+  }
+
+  .explore-main-title,
+  .review-main-title {
+    font-size: 42px !important;
+  }
+
+  .explore-header {
+    max-width: 1140px !important;
+    padding: 0 20px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .review-main-wrapper {
+    max-width: 1140px !important;
+  }
+
+  .review-header {
+    margin-bottom: 40px !important;
   }
 }
 
@@ -748,6 +860,71 @@ font-size: 10px !important;
   }
   .solutions-row-desc {
 font-size: 16px !important;
+  }
+
+  .explore-section {
+    padding: 40px 0 60px !important;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+
+  .explore-box {
+    min-height: 300px !important;
+    padding: 28px 18px !important;
+  }
+
+  .explore-box-title {
+    font-size: 22px !important;
+  }
+
+  .explore-box-icon {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 14px !important;
+  }
+
+  .explore-box-icon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .explore-box-desc {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  .review-section {
+    padding: 80px 24px 100px !important;
+  }
+
+  .review-container {
+    gap: 30px !important;
+  }
+
+  .review-left-col {
+    flex: 0 0 380px !important;
+    transform: scale(0.9) !important;
+    transform-origin: left center !important;
+  }
+
+  .review-quote-text {
+    font-size: 25px !important;
+  }
+
+  .explore-main-title,
+  .review-main-title {
+    font-size: 40px !important;
+  }
+
+  .explore-header {
+    padding: 0 20px !important;
+    margin-bottom: 36px !important;
+  }
+
+  .review-header {
+    margin-bottom: 36px !important;
   }
 }
 
@@ -1116,6 +1293,109 @@ font-size: 12px !important;
   }
   .shorts-author-role{
     font-size: 10px !important;
+  }
+
+  .explore-section {
+    padding: 36px 0 54px !important;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .explore-box {
+    min-height: 300px !important;
+    padding: 34px 28px !important;
+    border-right: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-child(5n) {
+    border-right: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-child(2n) {
+    border-right: none !important;
+  }
+
+  .explore-box:nth-child(n+6) {
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-last-child(-n+2) {
+    border-bottom: none !important;
+  }
+
+  .explore-box-title {
+    font-size: 32px !important;
+  }
+
+  .explore-box-desc {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    margin-top: 10px !important;
+  }
+
+  .explore-cursor-btn {
+    display: none !important;
+  }
+.explore-box-icon {
+width: 65px !important;
+height: 65px !important;
+}
+  .explore-box-icon img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .review-section {
+    padding: 70px 24px 90px !important;
+  }
+
+  .review-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 48px !important;
+  }
+
+  .review-left-col {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 440px !important;
+    height: 480px !important;
+  }
+
+  .review-right-col {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .review-quote-mark {
+    margin: 0 auto 16px !important;
+  }
+
+  .review-quote-text {
+    font-size: 26px !important;
+  }
+
+  .review-dots-row {
+    justify-content: center !important;
+  }
+
+  .explore-main-title,
+  .review-main-title {
+    font-size: 34px !important;
+  }
+
+  .explore-header {
+    padding: 0 20px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .review-header {
+    margin-bottom: 32px !important;
+    text-align: center !important;
   }
 }
 
@@ -1682,5 +1962,127 @@ font-size: 12px !important;
 
   .for-img {
     max-height: 280px !important;
+  }
+
+  .explore-section {
+    padding: 24px 0 44px !important;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .explore-box {
+    min-height: 230px !important;
+    padding: 22px 16px !important;
+    border-right: 1px solid #e5e7eb !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-child(5n) {
+    border-right: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-child(2n) {
+    border-right: none !important;
+  }
+
+  .explore-box:nth-child(n+6) {
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+
+  .explore-box:nth-last-child(-n+2) {
+    border-bottom: none !important;
+  }
+
+  .explore-box-title {
+    font-size: 18px !important;
+    line-height: 1.25 !important;
+  }
+
+  .explore-box-arrow {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .explore-box-bottom {
+    margin-top: 20px !important;
+  }
+
+  .explore-box-icon {
+    width: 46px !important;
+    height: 46px !important;
+    border-radius: 12px !important;
+  }
+
+  .explore-box-icon img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .explore-box-desc {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin-top: 8px !important;
+  }
+
+  .explore-cursor-btn {
+    display: none !important;
+  }
+
+  .review-section {
+    padding: 50px 16px 70px !important;
+  }
+
+  .review-container {
+    flex-direction: column !important;
+    gap: 36px !important;
+  }
+
+  .review-left-col {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    height: 440px !important;
+    transform: scale(0.85) !important;
+    transform-origin: center center !important;
+    margin-left: -20px !important;
+  }
+
+  .review-right-col {
+    padding-left: 0 !important;
+  }
+
+  .review-quote-mark {
+    font-size: 64px !important;
+    margin-bottom: -15px !important;
+  }
+
+  .review-quote-text {
+    font-size: 20px !important;
+    line-height: 1.55 !important;
+  }
+
+  .review-dropcap {
+    font-size: 34px !important;
+  }
+
+  .review-dots-row {
+    justify-content: center !important;
+    margin-top: 24px !important;
+  }
+
+  .explore-main-title,
+  .review-main-title {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+
+  .explore-header {
+    padding: 0 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .review-header {
+    margin-bottom: 24px !important;
   }
 }
